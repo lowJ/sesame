@@ -2300,7 +2300,7 @@ Connection ~ 10150 5200
 Wire Wire Line
 	10150 5200 10250 5200
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 USB1
+L sesame-rescue:USB_C_Receptacle_USB2.0-Connector USB1
 U 1 1 5F2A909F
 P 6450 5500
 F 0 "USB1" H 6557 6367 50  0000 C CNN
@@ -2571,4 +2571,47 @@ Wire Wire Line
 	5500 6800 5750 6800
 Text GLabel 10350 5950 2    50   Input ~ 0
 BOOT
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 600B7BCC
+P 10150 4150
+F 0 "J?" H 10178 4176 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 10178 4085 50  0000 L CNN
+F 2 "" H 10150 4150 50  0001 C CNN
+F 3 "~" H 10150 4150 50  0001 C CNN
+	1    10150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 600BA4D0
+P 9700 4250
+F 0 "#PWR?" H 9700 4000 50  0001 C CNN
+F 1 "GND" H 9705 4077 50  0000 C CNN
+F 2 "" H 9700 4250 50  0001 C CNN
+F 3 "" H 9700 4250 50  0001 C CNN
+	1    9700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 600BCA2C
+P 9700 4050
+F 0 "#PWR?" H 9700 3900 50  0001 C CNN
+F 1 "+5V" H 9715 4223 50  0000 C CNN
+F 2 "" H 9700 4050 50  0001 C CNN
+F 3 "" H 9700 4050 50  0001 C CNN
+	1    9700 4050
+	1    0    0    -1  
+$EndComp
+Text GLabel 2300 5200 1    50   Input ~ 0
+RGB
+Text GLabel 9700 4150 0    50   Input ~ 0
+RGB
+Wire Wire Line
+	9950 4050 9700 4050
+Wire Wire Line
+	9950 4150 9700 4150
+Wire Wire Line
+	9950 4250 9700 4250
 $EndSCHEMATC
